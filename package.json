@@ -1,7 +1,7 @@
 {
   "name": "enterprise-view",
   "preferGlobal": false,
-  "version": "0.8.0",
+  "version": "0.8.1",
   "author": "TOTAL.JS ENTERPRISE - Matus Szabo <matthew@totaljs.com>",
   "description": "view engine",
   "main": "./index.js",
@@ -11,7 +11,7 @@
     "view engine"
   ],
   "dependencies" : {
-    "nis-utils":"*",
+    "enterprise-utils":"*",
     "cheerio":">=0.18",
     "js2xmlparser":"*"
   },
