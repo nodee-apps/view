@@ -1,0 +1,25 @@
+{
+  "name": "enterprise-view",
+  "preferGlobal": false,
+  "version": "0.8.0",
+  "author": "TOTAL.JS ENTERPRISE - Matus Szabo <matthew@totaljs.com>",
+  "description": "view engine",
+  "main": "./index.js",
+  "keywords": [
+    "mvc",
+    "view",
+    "view engine"
+  ],
+  "dependencies" : {
+    "nis-utils":"*",
+    "cheerio":">=0.18",
+    "js2xmlparser":"*"
+  },
+  "analyze": false,
+  "devDependencies": {},
+  "bundledDependencies":[],  
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12"
+  }
+}
