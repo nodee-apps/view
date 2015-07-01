@@ -1,7 +1,7 @@
 {
   "name": "enterprise-view",
   "preferGlobal": false,
-  "version": "0.8.1",
+  "version": "0.8.2",
   "author": "TOTAL.JS ENTERPRISE - Matus Szabo <matthew@totaljs.com>",
   "description": "view engine",
   "main": "./index.js",
@@ -20,6 +20,6 @@
   "bundledDependencies":[],  
   "license": "MIT",
   "engines": {
-    "node": ">=0.12"
+    "node": ">=0.11"
   }
 }
