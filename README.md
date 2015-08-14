@@ -12,5 +12,5 @@ npm install enterprise-view
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: license.txt
 
-[travis-url]: https://travis-ci.org/totaljs-enterprise/view
-[travis-image]: https://travis-ci.org/totaljs-enterprise/view.svg?branch=master
+[travis-url]: https://travis-ci.org/nodejs-enterprise/view
+[travis-image]: https://travis-ci.org/nodejs-enterprise/view.svg?branch=master
