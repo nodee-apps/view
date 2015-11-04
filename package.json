@@ -1,7 +1,7 @@
 {
   "name": "enterprise-view",
   "preferGlobal": false,
-  "version": "0.8.3",
+  "version": "0.8.4",
   "author": "NODEJS ENTERPRISE - Matus Szabo <matthew@nodejsenterprise.com>",
   "description": "view engine",
   "main": "./index.js",
