@@ -12,17 +12,17 @@ testCompile();
  * test compile html
  */
 function testCompile(){
-    var simpleHtml =    '<html><a href="asd">text..sdfsdf</a>' +
+    var simpleHtml =    '<html><a href="asd">@{text..sdfsdf}</a>' +
                             '<div style="width:300px;">' +
-                                '<span style="display:none;">div1.span1</span>' +
+                                '<span style="display:none;">@{div1.span1}</span>' +
                             '</div>' +
                             '<div style="height:200px;">' +
-                                '<span style="display:none;">div2.span1</span>' +
+                                '<span style="display:none;">@{div2.span1}</span>' +
                             '</div>' +
                         '</html>';
                 
     var html = '<layout template="test_layout">' +
-                    '<a show-if-mode="admin" href="asd">text..sdfsdf</a>' +
+                    '<a show-if-mode="admin" href="asd">@{text..sdfsdf}</a>' +
                     '<div style="width:300px;">' +
                         '<span style="display:none;">div1.span1</span>' +
                     '</div>' +
@@ -119,7 +119,6 @@ function testCompile(){
     assert.deepEqual(simpleCompiled.partials, []);
     
     var compiled = compileHtml(html, mapping);
-    //console.warn(compiled.toString());
     
     // compare extracted view dependencies
     assert.ok(compiled.isLayout === true);
@@ -127,6 +126,8 @@ function testCompile(){
     assert.deepEqual(compiled.partials, [ { template:'widgets/w1', id:'w1' }, { template:'partials/p1', id:'' } ]);
     assert.deepEqual(compiled.containers, [ { id: 'left', widgets: [ 'widgets/w1', 'widgets/w2' ] },
                                             { id: 'center', widgets: [] } ]);
+    
+    assert.deepEqual(compiled.locals, { 'text..sdfsdf': 'text..sdfsdf' });
     
     // test if function generates html properly
     // function (model, mode, body, partials){ ... }
