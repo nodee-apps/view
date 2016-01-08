@@ -55,21 +55,21 @@ function testView(){
         console.log('view init - OK');
         
         var expectedHtml =  '<!DOCTYPE html>' +
-                            '<html e-template-id="views/layout.html" e-widget-id="">' +
+                            '<html ne-template-id="views/layout.html" ne-widget-id="">' +
                                 '<head>' +
                                     '<title>test</title>' +
                                 '</head>' +
                                 '<body>' +
-                                '<a href="asd" e-template-id="views/index.html" e-widget-id="">text..sdfsdf</a>' +
-                                '<div style="width:300px;" e-template-id="views/index.html" e-widget-id="">' +
+                                '<a href="asd" ne-template-id="views/index.html" ne-widget-id="">text..sdfsdf</a>' +
+                                '<div style="width:300px;" ne-template-id="views/index.html" ne-widget-id="">' +
                                     '<span style="display:none;">div1.span1</span>' +
                                 '</div>' +
-                                '<div style="height:200px;" e-template-id="views/index.html" e-widget-id="">' +
+                                '<div style="height:200px;" ne-template-id="views/index.html" ne-widget-id="">' +
                                     '<span style="display:none;">div2.span1</span>' +
                                 '</div>' +
-                                '<div e-template-id="views/partials/partial1.html" e-widget-id="">partial1</div>' +
-                                '<div e-template-id="views/partials/partial2.html" e-widget-id="">partial2</div>' +
-                                '<div e-container="left" e-container-widgets="partials/partial1,partials/partial2" e-template-id="views/index.html" e-widget-id=""></div>' +
+                                '<div ne-template-id="views/partials/partial1.html" ne-widget-id="">partial1</div>' +
+                                '<div ne-template-id="views/partials/partial2.html" ne-widget-id="">partial2</div>' +
+                                '<div ne-container="left" ne-container-widgets="partials/partial1,partials/partial2" ne-template-id="views/index.html" ne-widget-id=""></div>' +
                                 '</body>' +
                             '</html>';
         

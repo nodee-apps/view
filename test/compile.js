@@ -29,8 +29,8 @@ function testCompile(){
                     '<div style="height:200px;">' +
                         '<span style="display:none;">div2.span1</span>' +
                     '</div>' +
-                    '<nav e-container="left" e-container-widgets="widgets/w1, widgets/w2"></nav>' + // widgets container "left"
-                    '<nav e-container="center"></nav>' + // widgets container "right"
+                    '<nav ne-container="left" ne-container-widgets="widgets/w1, widgets/w2"></nav>' + // widgets container "left"
+                    '<nav ne-container="center"></nav>' + // widgets container "right"
                     '<widget id="w1" template="widgets/w1"></widget>' + // static widget behave same as partial
                     '<partial template="partials/p1"></partial>' + // partial act as widget
                     '<render-body></render-body>' +
@@ -143,14 +143,14 @@ function testCompile(){
         'center':'<div>container center - w1</div>'
     };
     
-    var expectedResult =    '<a href="http://test" data="{&quot;test&quot;:&quot;test&quot;}" e-template-id="" e-widget-id="">this is test anchor</a>'+
+    var expectedResult =    '<a href="http://test" data="{&quot;test&quot;:&quot;test&quot;}" ne-template-id="" ne-widget-id="">this is test anchor</a>'+
                             '<div style="width: 100px; height: 100px;" class=" test-1-block block-test-1 hidden">this is test div-1</div>'+
                             '<div style="width: 200px; height: 200px;" class=" test-2-block block-test-2">this is test div-2</div>'+
-                            '<nav e-container="left" e-container-widgets="widgets/w1,widgets/w2" e-template-id="" e-widget-id="">'+
+                            '<nav ne-container="left" ne-container-widgets="widgets/w1,widgets/w2" ne-template-id="" ne-widget-id="">'+
                                 '<div>container left - w1</div>'+
                                 '<div>container left - w2</div>'+
                             '</nav>'+
-                            '<nav e-container="center" e-container-widgets="" e-template-id="" e-widget-id="">'+
+                            '<nav ne-container="center" ne-container-widgets="" ne-template-id="" ne-widget-id="">'+
                                 '<div>container center - w1</div>'+
                             '</nav>'+
                             '<div>widget 1</div>'+
