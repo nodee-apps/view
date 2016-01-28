@@ -1,8 +1,8 @@
 {
-  "name": "enterprise-view",
+  "name": "nodee-view",
   "preferGlobal": false,
   "version": "0.8.4",
-  "author": "NODEJS ENTERPRISE - Matus Szabo <matthew@nodejsenterprise.com>",
+  "author": "NODEE - Matus Szabo <matus@nodee.io>",
   "description": "view engine",
   "main": "./index.js",
   "keywords": [
@@ -11,7 +11,7 @@
     "view engine"
   ],
   "dependencies" : {
-    "enterprise-utils":"*",
+    "nodee-utils":"*",
     "cheerio":">=0.18",
     "js2xmlparser":"*"
   },
