@@ -22,7 +22,7 @@ function testCompile(){
                         '</html>';
                 
     var html = '<layout template="test_layout">' +
-                    '<a show-if-mode="admin" href="asd">@{text..sdfsdf}</a>' +
+                    '<a ne-show-if-mode="admin" href="asd">@{text..sdfsdf}</a>' +
                     '<div style="width:300px;">' +
                         '<span style="display:none;">div1.span1</span>' +
                     '</div>' +
@@ -158,6 +158,5 @@ function testCompile(){
                             '<div>body content</div>';
     
     assert.equal(compiled(model, 'admin', body, partials, containers, '', dynamicKeys), expectedResult);
-    
     console.log('compile html - OK');
 }
