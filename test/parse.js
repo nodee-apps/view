@@ -86,33 +86,33 @@ function testParse(){
 
 
 function testSlice(){
-    var html = '<div e-template-id="layout" e-container="c1">' +
+    var html = '<div ne-template-id="layout" ne-container="c1">' +
                 '<p>content outside partials</p>'+
-                '<div e-template-id="tmp1" style="width:300px;">' +
+                '<div ne-template-id="tmp1" style="width:300px;">' +
                     '<span style="display:none;">div1.span1</span>' +
                 '</div>' +
-                '<div e-template-id="tmp2" e-widget-id="w2" style="height:200px;">' +
+                '<div ne-template-id="tmp2" ne-widget-id="w2" style="height:200px;">' +
                     '<span style="display:none;">div2.span1</span>' +
                 '</div>' +
-                '<div e-template-id="tmp3" e-widget-id="w3">1</div>' +
-                '<div e-template-id="tmp3" e-widget-id="w3">2</div>' +
+                '<div ne-template-id="tmp3" ne-widget-id="w3">1</div>' +
+                '<div ne-template-id="tmp3" ne-widget-id="w3">2</div>' +
                '</div>';
     
     var result = [
         { template: 'layout',
-          html: '<div e-template-id="layout" e-container="c1"><p>content outside partials</p></div>',
+          html: '<div ne-template-id="layout" ne-container="c1"><p>content outside partials</p></div>',
           containerId: 'c1',
           widgetId: '' },
         { template: 'tmp1',
-          html: '<div e-template-id="tmp1" style="width:300px;"><span style="display:none;">div1.span1</span></div>',
+          html: '<div ne-template-id="tmp1" style="width:300px;"><span style="display:none;">div1.span1</span></div>',
           containerId: 'c1',
           widgetId: '' },
         { template: 'tmp2',
-          html: '<div e-template-id="tmp2" e-widget-id="w2" style="height:200px;"><span style="display:none;">div2.span1</span></div>',
+          html: '<div ne-template-id="tmp2" ne-widget-id="w2" style="height:200px;"><span style="display:none;">div2.span1</span></div>',
           containerId: 'c1',
           widgetId: 'w2' },
         { template: 'tmp3',
-          html: '<div e-template-id="tmp3" e-widget-id="w3">1</div><div e-template-id="tmp3" e-widget-id="w3">2</div>',
+          html: '<div ne-template-id="tmp3" ne-widget-id="w3">1</div><div ne-template-id="tmp3" ne-widget-id="w3">2</div>',
           containerId: 'c1',
           widgetId: 'w3' }
     ];
