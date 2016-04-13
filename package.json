@@ -1,7 +1,7 @@
 {
   "name": "nodee-view",
   "preferGlobal": false,
-  "version": "0.9.0",
+  "version": "0.9.1",
   "author": "NODEE - Matus Szabo <matus@nodee.io>",
   "description": "view engine",
   "main": "./index.js",
