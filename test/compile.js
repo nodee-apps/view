@@ -12,17 +12,17 @@ testCompile();
  * test compile html
  */
 function testCompile(){
-    var simpleHtml =    '<html><a href="asd">@(text..sdfsdf)</a>' +
+    var simpleHtml =    '<html><a href="asd">@L("text..sdfsdf")</a>' +
                             '<div style="width:300px;">' +
-                                '<span style="display:none;">@(div1.span1)</span>' +
+                                '<span style="display:none;">@L("div1.span1")</span>' +
                             '</div>' +
                             '<div style="height:200px;">' +
-                                '<span style="display:none;">@(div2.span1)</span>' +
+                                '<span style="display:none;">@L(\'div2.span1\')</span>' +
                             '</div>' +
                         '</html>';
                 
     var html = '<layout template="test_layout">' +
-                    '<a ne-show-if-mode="admin" href="asd">@(text..sdfsdf)</a>' +
+                    '<a ne-show-if-mode="admin" href="asd">@L("text..sdfsdf")</a>' +
                     '<div style="width:300px;">' +
                         '<span style="display:none;">div1.span1</span>' +
                     '</div>' +
