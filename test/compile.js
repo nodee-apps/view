@@ -12,17 +12,17 @@ testCompile();
  * test compile html
  */
 function testCompile(){
-    var simpleHtml =    '<html><a href="asd">@L("text..sdfsdf")</a>' +
+    var simpleHtml =    '<html><a href="asd">@T("text..sdfsdf")</a>' +
                             '<div style="width:300px;">' +
-                                '<span style="display:none;">@L("div1.span1")</span>' +
+                                '<span style="display:none;">@T("div1.span1")</span>' +
                             '</div>' +
                             '<div style="height:200px;">' +
-                                '<span style="display:none;">@L(\'div2.span1\')</span>' +
+                                '<span style="display:none;">@T(\'div2.span1\')</span>' +
                             '</div>' +
                         '</html>';
                 
     var html = '<layout template="test_layout">' +
-                    '<a ne-show-if-mode="admin" href="asd">@L("text..sdfsdf")</a>' +
+                    '<a ne-show-if-mode="admin" href="asd">@T("text..sdfsdf")</a>' +
                     '<div style="width:300px;">' +
                         '<span style="display:none;">div1.span1</span>' +
                     '</div>' +
@@ -157,6 +157,6 @@ function testCompile(){
                             '<div>partial 1</div>'+
                             '<div>body content</div>';
     
-    assert.equal(compiled(model, 'admin', body, partials, containers, '', dynamicKeys), expectedResult);
+    assert.equal(compiled(model, {}, 'admin', body, partials, containers, '', dynamicKeys), expectedResult);
     console.log('compile html - OK');
 }

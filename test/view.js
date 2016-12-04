@@ -73,11 +73,10 @@ function testView(){
                                 '</body>' +
                             '</html>';
         
-        var renderedHtml = view.render('views', 'index', {}, 'admin');
+        var renderedHtml = view.render('views', 'index', {}, {}, 'admin');
         
         // replace line endings and multiple white spaces
         renderedHtml = renderedHtml.replace(/\n/g,'').replace(/\s{2,}/g,'');
-        
         assert.ok(renderedHtml === expectedHtml);
         
         fsExt.unwatchAll();
